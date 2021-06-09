@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ol {
+    display: none;
+}
+
+#logo {
+    width: 140px;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#buton3 {
+    width: 40px;
+    height: 45px;
+}
+
+#button_conectare {
+    text-decoration: none;
+    display: block;
+    padding: 7px 17px;
+    background-color: #FFD564;
+    color: #4c4c4c;
+    font-size: 12px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#container_nav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    max-width: 200px;
+    height: 40px;
+}
+
+nav {
+    border-bottom: 1px solid brown;
+}
+
+
+/* aranjare mijloc*/
+
+#first_div {
+    text-align: left;
+    width: 95%;
+    margin: auto;
+}
+
+#first_div h2 {
+    color: #4C4145;
+    font: 20px;
+    text-transform: uppercase;
+    font-style: 'aleobold', sans-serif;
+}
+
+#poza_film {
+    width: 190px;
+    height: 253px;
+    position: relative;
+}
+
+#timp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 190px;
+}
+
+#timp img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#timp {
+    position: relative;
+}
+
+#timp::after {
+    content: 'N 15';
+    position: absolute;
+    right: 0;
+    background-color: #EB7A48;
+    padding: 2px 4px;
+    color: white;
+    border-radius: 4px;
+}
+
+#informatii_film {
+    width: 80%;
+}
+
+#informatii_film h3 {
+    color: #4C4145;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica;
+}
+
+#span_informatii {
+    background-color: green;
+    color: white;
+    padding: 3px 6px;
+    margin-right: 5px;
+}
+
+#detalii_saptamana {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#informatii_film span {
+    font-weight: bold;
+}
+
+#informatii_film a {
+    padding: 4px 14px;
+    max-width: 75px;
+    height: 25px;
+    display: block;
+    background-color: #FE505A;
+    border-radius: 5px;
+}
+
+#informatii_film a img {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    margin-right: 5px;
+}
+
+#informatii_film a::after {
+    content: 'Trailer';
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+#ora {
+    text-align: right;
+    color: #FE505A;
+    position: relative;
+    border-top: 1px solid #4C4145;
+    border-bottom: 1px solid #4C4145;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    ;
+}
+
+footer {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+footer ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+footer ol li {
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: rgba(207, 207, 207, 0.2);
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+#social_media ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    max-width: 250px;
+    margin: auto;
+}
+
+ul li {
+    margin-left: 10px;
+}
+
+ul li img {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border: 2px solid gray;
+    border-radius: 100%;
+}
+
+#social_media {
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+header {
+    display: none;
+}
+
+footer {
+    text-transform: uppercase;
+}
+
+@media(min-width:720px) {
+    article {
+        line-height: 20px;
+    }
+    #div_articole {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 60px;
+    }
+    #div_poza {
+        margin-right: 20px;
+    }
+    #ora {
+        text-align: center;
+    }
+    #container_article {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media(min-width:1024px) {
+    nav ol {
+        display: unset;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+    nav ol li {
+        margin-left: 50px;
+        font-size: 20px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    #buton3 {
+        display: none;
+    }
+    nav ol li::after {
+        content: '';
+        position: absolute;
+        width: 1%;
+        height: 2px;
+        background-color: brown;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: 1s;
+    }
+    nav ol li:hover::after {
+        width: 100%;
+        opacity: 1;
+    }
+    #informatii_film {
+        width: 100%;
+    }
+    #container_article {
+        display: flex;
+        flex-direction: row;
+        width: 120%;
+        max-width: 900px;
+    }
+    #poza_film {
+        height: 85%;
+    }
+    #first_div h2 {
+        margin-bottom: 30px;
+    }
+    #first_div {
+        max-width: 1500px;
+        margin: auto;
+    }
+    #div_articole {
+        display: grid;
+    }
+    #container_footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer {
+        width: 100%;
+    }
+    #first_div {
+        max-width: 1200px;
+        margin: unset;
+        position: relative;
+        margin-left: 20px;
+    }
+    #div_articole {
+        position: relative;
+    }
+    #social_media {
+        margin-top: 0;
+    }
+    header {
+        width: 100vw;
+        height: 200px;
+        display: block;
+        margin-bottom: 130px;
+    }
+    header img {
+        width: 100vw;
+        height: 300px;
+    }
+    #first_div {
+        max-width: 100%;
+        max-width: 1400px;
+        margin: auto;
+    }
+    #ora {
+        transition: 1s;
+    }
+    #ora:hover {
+        padding-bottom: 250px;
+    }
+    #div_poza {
+        max-height: 320px;
+    }
+}
